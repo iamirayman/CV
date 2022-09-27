@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+:root {
+    --primarycolor: orange;
+    --secondcolor: #ff2746 ;
+    --3dcolor: #555;
+    --lightcolor: #ffffff ;
+    --bgcolor-1: #eff4fd;
+    --darkcolor: #212121 ;
+    --padding: 8%;
+    --transition: 0.5s ease;
+}
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    padding: 15px var(--padding);
+    position: relative;
+}
+body {
+    background-color: var(--bgcolor-1);
+}
+::selection {
+    color: var(--lightcolor);
+    background-color: var(--primarycolor);
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    cursor: pointer;
+    padding-left: 3%;
+}
+.nav-links a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--darkcolor);
+    margin-right: 35px;
+    transition: var(--transition);
+    font-weight: 700;
+    text-transform: uppercase;    
+}
+.nav-links a:hover {
+    color: var(--secondcolor);
+}
+
+ 
+.main {
+    margin-top: 15%;
+}
+.conten-text h2 {
+    font-size: 3em;
+}
+span {
+    color: var(--primarycolor);
+}
+.conten-text p {
+    color: var(--3dcolor);
+    margin: 2% 0;
+}
+.btn {
+    background-color: var(--darkcolor);
+    border: 2px solid var(--darkcolor);
+    padding: 2px 10px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: 600;
+    transition: var(--transition);
+}
+.btn a {
+    text-decoration: none;
+    color: var(--lightcolor);
+
+}
+.btn:hover {
+     background-color: black;
+     transform: scale(1.1);
+ }
+
+.imges {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.imges img {
+    height: 100%;
+    position:  absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.imges:hover .shape {
+    bottom: 40px;
+}
+.imges:hover .girl {
+    left: 45%; 
+}
